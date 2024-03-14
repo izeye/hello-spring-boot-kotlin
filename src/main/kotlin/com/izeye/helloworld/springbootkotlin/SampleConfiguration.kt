@@ -15,6 +15,11 @@ class SampleConfiguration {
     @Bean
     internal fun sampleBean() = SampleBean()
 
+    @Bean
+    @Suppress("INAPPLICABLE_JVM_NAME")
+    @JvmName("anotherSampleBean")
+    internal fun anotherSampleBean() = SampleBean()
+
 }
 
 /**
